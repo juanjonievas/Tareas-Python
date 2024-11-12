@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3 - Skills y Contacto</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+
+    <div class="container">
+        <a href="pagina2.html" class="titulo-principal">BLOG</a>
+
+        <div class="contenido">
+            <!-- Sección de Skills -->
+            <div class="skills">
+                <h2 class="seccion-titulo skills-title">Skills</h2>
+                <ul class="skills-list">
+                    <li>Bueno manejo de idiomas: Python y Java ✔</li>
+                    <li>Buena resolución de problemas lógicos ✔</li>
+                    <li>Muy buena adaptabilidad ✔</li>
+                    <li>Aprendizaje rápido ✔</li>
+                    <li>Habilidades comunicativas ✔</li>
+                    <li>Buen manejo a la hora de hacer informes ✔</li>
+                    <li>Has click en la pantalla para más información→</li>
+                </ul>
+            </div>
+
+            <!-- Sección de contacto oculta inicialmente -->
+            <div id="contacto" class="contacto contacto-oculto">
+                <h2>Contacto</h2>
+                <p>GMAIL: juannievas15@gmail.com</p>
+                <p>CEL: +5493442588921</p>
+                <p>LINKEDIN: Juan Nievas</p>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+        
+        <p id="fin" class="fin" onclick="mostrarVideo()">FIN</p>
+
+        <!-- Contenedor de video oculto inicialmente -->
+        <div id="video-container" class="video-container">
+            <video id="video" autoplay muted>
+                <source src="73913-549736291.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <script src="RedireccionPag.js"></script>
+</body>
+</html>

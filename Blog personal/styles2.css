@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
+
+/* Fondo de estrellas */
+body {
+    font-family: 'BioRhyme', serif; /* Fuente general */
+    color: white;
+    margin: 0;
+    padding: 0;
+    background: url('115427-704729730_small.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    border: 2px solid #00a2ff00; /* Borde en color azul */
+    background-color: rgba(0, 0, 0, 0); /* Fondo oscuro para mejorar legibilidad */
+    box-sizing: border-box;
+}
+
+/* Título principal */
+.titulo-principal {
+    font-size: 3em;
+    font-family: 'Krona One', sans-serif;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 5px #F5E6E6;
+    text-decoration: none;
+}
+
+.titulo-principal:hover {
+    background: #00000000;
+    color: #ffffff4a;
+}
+
+/* Estilos para la sección de presentación y proyectos */
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que se ajusten si el espacio es reducido */
+}
+
+.presentacion, .proyectos {
+    width: 48%; /* Ocupa la mitad del contenedor */
+}
+
+/* Títulos de secciones */
+.seccion-titulo {
+    font-size: 2em;
+    font-family: 'BioRhyme', serif;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Texto de presentación */
+.texto {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Imagen de perfil */
+.imagen {
+    width: 100%;
+    max-width: 320px; /* Tamaño específico */
+    height: auto;
+    border-radius: 15px; /* Bordes redondeados */
+    margin-top: 20px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ajuste de la lista de proyectos para una mejor alineación */
+.lista-proyectos {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+/* Elementos de la lista de proyectos */
+.lista-proyectos li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    font-family: 'BioRhyme', serif;
+    font-size: 1.1em;
+}
+
+/* Iconos de proyectos - tamaño uniforme */
+.icono-proyecto {
+    margin-right: 15px;
+    width: 60px; /* Tamaño uniforme para facilitar la alineación */
+    height: auto;
+}
+
+/* Ajustes específicos para cada icono */
+.icono-figma,
+.icono-java,
+.icono-python {
+    width: 60px; /* Tamaño uniforme */
+    height: auto;
+}
+
+.arrow-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px; /* Ajusta el espacio entre la lista y la flecha */
+}
+
+.arrow-icon {
+    width: 50px; /* Ajusta el tamaño de la flecha */
+    height: auto;
+    cursor: pointer; /* Cambia el cursor para indicar que es un enlace */
+    transition: transform 0.3s ease; /* Transición suave para el efecto de hover */
+    filter: invert(1); /* Cambia el color a blanco */
+}
+
+/* Efecto de hover */
+.arrow-icon:hover {
+    transform: translateX(-5px); /* Desplaza la flecha a la izquierda al hacer hover */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.arrow-icon {
+    animation: bounce 1s infinite; /* La flecha tendrá un efecto de rebote continuo */
+}
+
+

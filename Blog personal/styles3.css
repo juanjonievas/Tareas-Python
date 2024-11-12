@@ -1,0 +1,124 @@
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
+
+/* Fondo de estrellas */
+body {
+    font-family: 'BioRhyme', serif; /* Fuente general */
+    color: white;
+    margin: 0;
+    padding: 0;
+    background: url('115427-704729730_small.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    border: 2px solid #00a2ff00;
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+}
+
+/* Título principal */
+.titulo-principal {
+    font-size: 3em;
+    font-family: 'Krona One', sans-serif;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 5px #F5E6E6;
+    text-align: center;
+    text-decoration: none;
+}
+
+.titulo-principal:hover {
+    background: #00000000;
+    color: #ffffff4a;
+}
+
+
+/* Estilos para la sección de skills y contacto */
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Títulos de secciones */
+.skills-title, .contact-title {
+    font-size: 2em;
+    font-family: 'BioRhyme', serif;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 0px 0px 0px #FFFFFF;
+}
+
+/* Lista de Skills */
+.skills-list, .contact-info {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.8;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+/* Estilo de cada elemento en la lista */
+.skills-list li, .contact-info li {
+    font-family: 'BioRhyme', serif;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 0px #FFFFFF;
+}
+
+.fin {
+    font-family: 'BioRhyme', serif;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 0px 0px 5px #FFFFFF;
+}
+
+.fin:hover {
+    background: #00000000;
+    color: #ffffff4a;
+}
+
+/* Ocultar la sección de contacto inicialmente */
+.contacto.contacto-oculto {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Hacer visible la sección de contacto */
+.contacto.contacto-visible {
+    display: block;
+    opacity: 1;
+}
+
+.video-container {
+    display: none; /* Oculto inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000; /* Asegura que el video esté encima de todo */
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

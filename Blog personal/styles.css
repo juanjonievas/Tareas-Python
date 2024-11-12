@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+/* Fondo con el GIF */
+body {
+    background: url('115427-704729730_small.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Contenedor principal */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+/* Título principal */
+.title {
+    font-family: 'Krona One', sans-serif;
+    font-size: 64px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 5px #F5E6E6;
+}
+
+/* Subtítulo */
+.subtitle {
+    font-family: 'Birthstone', cursive;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+/* Botón de iniciar */
+.start-button {
+    font-family: 'Birthstone', cursive;
+    font-size: 32px;
+    color: #FFFFFF;
+    background: none;
+    border: 0px solid #FFFFFF;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.start-button:hover {
+    background: #00000000;
+    color: #ffffff1d;
+}
+
+
